@@ -10,7 +10,7 @@ public class StreamGroupBy {
 
     public static void main(String args[]) {
 
-        Map<Long,List<Employee>> sortedEmployee1 = ForEachImpl.getAllEmployee().stream().collect(Collectors.groupingBy(e->e.getSalary()));
-        System.out.println(sortedEmployee1);
+        Map<Long,List<Employee>> sortedEmployee = ForEachImpl.getAllEmployee().stream().collect(Collectors.groupingBy(e->e.getSalary()));
+        System.out.println(sortedEmployee);
     }
 }
